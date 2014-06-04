@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LFSPGooglePlacesAutocomplete"
-  s.version      = "1.0.3"
+  s.version      = "1.0.5"
   s.summary      = "An objective-c wrapper around the Google Places autocomplete API. Includes sample application emulating the Maps app."
   s.description  = <<-DESC
                    LFSPGooglePlacesAutocomplete is a simple objective-c wrapper around the Google Places Autocomplete API.
