@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LFSPGooglePlacesAutocomplete"
-  s.version      = "1.0.5"
+  s.version      = "1.0.4"
   s.summary      = "An objective-c wrapper around the Google Places autocomplete API. Includes sample application emulating the Maps app."
   s.description  = <<-DESC
                    LFSPGooglePlacesAutocomplete is a simple objective-c wrapper around the Google Places Autocomplete API.
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = "https://github.com/superarts/SPGooglePlacesAutocomplete"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
-  s.authors      = { "Matej Bukovinski" => "matej@bukovinski.com", "Chris Chen" => "chrischen79@gmail.com", "Leo L" => "leo@superarts.org" }
+  s.authors      = { "Matej Bukovinski" => "matej@bukovinski.com", "Chris Chen" => "chrischen79@gmail.com", "Leo" => "leo@superarts.org" }
 
   s.platform     = :ios, '6.0'
   s.source       = { :git => "https://github.com/superarts/SPGooglePlacesAutocomplete.git", :tag => '1.0.3'}
