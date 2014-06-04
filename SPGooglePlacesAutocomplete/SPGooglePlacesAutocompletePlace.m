@@ -26,6 +26,8 @@
     place.identifier = placeDictionary[@"id"];
     place.type = SPPlaceTypeFromDictionary(placeDictionary);
     place.key = apiKey;
+	place.dict = [[NSDictionary alloc] initWithDictionary:placeDictionary];
+
     return place;
 }
 

@@ -17,6 +17,11 @@
 + (SPGooglePlacesAutocompletePlace *)placeFromDictionary:(NSDictionary *)placeDictionary apiKey:(NSString *)apiKey;
 
 /*!
+ Raw data
+ */
+@property (nonatomic, strong) NSDictionary* dict;
+
+/*!
  Contains the human-readable name for the returned result. For establishment results, this is usually the business name.
  */
 @property (nonatomic, strong, readonly) NSString *name;
