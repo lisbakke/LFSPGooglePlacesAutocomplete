@@ -1,3 +1,9 @@
+# LFSPGooglePlacesAutocomplete
+
+This project is based on SPGooglePlacesAutocomplete. An addtional "dict" attribute has been added so that you can access raw data from Google.
+
+----
+
 SPGooglePlacesAutocomplete
 ===============
 
