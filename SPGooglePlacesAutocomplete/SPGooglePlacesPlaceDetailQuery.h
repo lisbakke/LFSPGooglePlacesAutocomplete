@@ -44,6 +44,11 @@
  */
 @property (nonatomic, strong) NSString *key;
 
+/*!
+ The protocol plus domain of the server you'd like to direct requests at. This is used if you proxy results on your own server.
+ */
+@property (nonatomic, copy) NSString *baseUrl;
+
 #pragma mark -
 #pragma mark Optional parameters
 

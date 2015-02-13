@@ -79,5 +79,10 @@
  */
 @property (nonatomic, strong) NSString *countryCode;
 
+/*!
+ The protocol plus domain of the server you'd like to direct requests at. This is used if you proxy results on your own server.
+ */
+@property (nonatomic, copy) NSString *baseUrl;
+
 @end
 
