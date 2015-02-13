@@ -35,8 +35,10 @@
 
 
 - (NSString *)googleURLString {
-    NSMutableString *url = [NSMutableString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/autocomplete/json?input=%@&sensor=%@&key=%@",
-                            [self.input stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+    NSString *baseUrl = (self.baseUrl && ![self.baseUrl isEqualToString:@""]) ?
+        self.baseUrl : @"https://maps.googleapis.com";
+    NSMutableString *url = [NSMutableString stringWithFormat:@"%@/maps/api/place/autocomplete/json?input=%@&sensor=%@&key=%@",
+                            baseUrl, [self.input stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
                             SPBooleanStringForBool(self.sensor), self.key];
     if (self.offset != NSNotFound) {
         [url appendFormat:@"&offset=%lu", (unsigned long)self.offset];
